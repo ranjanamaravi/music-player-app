@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.jfif">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Music Player</h1>
+    </div>
+
+    <div class="container">
+        <div class="songList">
+            <h1>My PlayList</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay" id="songs_0"><i id="0"
+                                class="fa-regular songItemPlay fa-circle-play"></i> </span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay"  id="songs_1"><i id="1"
+                                class="fa-regular songItemPlay fa-circle-play"></i> </span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay" id="songs_2"><i id="2"
+                                class="fa-regular songItemPlay fa-circle-play"></i> </span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay" id="songs_3"><i id="3"
+                                class="fa-regular songItemPlay fa-circle-play"></i> </span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay" id="songs_4"><i id="4"
+                                class="fa-regular songItemPlay fa-circle-play"></i> </span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay" id="songs_5"><i id="5"
+                                class="fa-regular songItemPlay fa-circle-play"></i> </span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay" id="songs_6"><i id="6"
+                                class="fa-regular songItemPlay fa-circle-play"></i> </span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay" id="songs_7"><i id="7"
+                                class="fa-regular songItemPlay fa-circle-play"></i> </span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay" id="songs_8"><i id="8"
+                                class="fa-regular songItemPlay fa-circle-play"></i> </span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay" id="songs_9"><i id="9"
+                                class="fa-regular songItemPlay fa-circle-play"></i> </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <i class="fa-solid fa-backward-step" id="previous"></i>
+            <i class="fa-regular fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid fa-forward-step" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="images/playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Besabriyaan - Armaan Malik</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

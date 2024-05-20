@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    background-color: antiquewhite;
+    font-family: 'Varela Round', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.songList h1 {
+    text-align: center;
+}
+
+.heading {
+    font-family: 'Ubuntu', sans-serif;
+    height: 75px;
+    background-color: black;
+    color: white;
+    line-height: 75px;
+    text-align: center;
+    font-size: larger;
+}
+
+.container {
+    background-color: black;
+    color: white;
+    margin: 23px auto;
+    width: 90%;
+    border-radius: 12px;
+    padding: 20px;
+    background-image: url('images/bg.jfif');
+    object-fit: cover;
+}
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons {
+    margin-top: 14px;
+}
+
+.icons i {
+    cursor: pointer;
+    font-size: 1.8rem;
+    margin-right: 10px;
+    margin-top: 35px;
+}
+
+#myProgressBar {
+    width: 95vw;
+    cursor: pointer;
+}
+
+.songItemContainer {
+    margin-top: 10px;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img {
+    width: 40px;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+
+.songlistplay {
+    margin: 0 10px;
+}
+
+.songlistplay i {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 3vw;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 70%;
+        padding: 34px;
+
+    }
+    .icons i {
+        font-size: 3.5rem;
+    }
+    
+    #myProgressBar {
+        width: 80vw;
+    }
+    
+    .songItemContainer {
+        margin-top: 74px;
+    }
+    .songItem img {
+        width: 43px;
+        margin: 0 23px;
+    }
+
+    .songlistplay {
+        margin: 0 23px;
+    }
+
+    .songlistplay i {
+        margin-left: 7px;
+    }
+
+    .songInfo {
+        left: 7vw;
+    }
+    .icons i {
+        font-size: 2.5rem;
+        margin-top: 0;
+
+    }
+    #myProgressBar {
+        width: 90vw;
+    }
+
+}
